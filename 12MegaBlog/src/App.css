@@ -1,0 +1,65 @@
+/* Root Container */
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffffff; /* White background for main container */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Logo Styles */
+.logo {
+  height: 5em;
+  padding: 1em;
+  transition: filter 300ms, transform 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1.5em rgba(0, 123, 255, 0.5));
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5em rgba(0, 204, 255, 0.5));
+}
+
+/* Animation */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media Query for Animation */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 15s linear;
+  }
+}
+
+/* Card Styles */
+.card {
+  padding: 1.5em;
+  background-color: #ffffff; /* White background for card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 1rem; /* Margin around cards */
+  transition: transform 300ms, box-shadow 300ms;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Read The Docs Styles */
+.read-the-docs {
+  color: #666; /* Darker gray for better readability */
+  font-size: 1.1rem; /* Slightly larger font size */
+  margin-top: 1rem; /* Space above text */
+}
